@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FluentMigrator;
 
-namespace NewsHole.Data.Migrations._2015_01_15
+namespace NewsHole.Data.Migrations
 {
     [Migration(201401152156)]
     public class _2156_Create_User_And_ResetPassword_Tables : Migration
