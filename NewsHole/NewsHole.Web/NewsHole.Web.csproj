@@ -39,6 +39,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -104,6 +107,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\FormsAuthenticationWrapper.cs" />
+    <Compile Include="Infrastructure\NinjectControllerFactory.cs" />
     <Compile Include="Models\Account\CreateUserModel.cs" />
     <Compile Include="Models\Account\LoginModel.cs" />
     <Compile Include="Models\Account\NewPasswordModel.cs" />
@@ -146,6 +150,10 @@
     <ProjectReference Include="..\NewsHole.Data\NewsHole.Data.csproj">
       <Project>{d79328c4-4247-4692-8271-5abad2535e03}</Project>
       <Name>NewsHole.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NewsHole.Dependencies\NewsHole.Dependencies.csproj">
+      <Project>{5bc4c69a-75c1-46fb-aaac-a47d662e4211}</Project>
+      <Name>NewsHole.Dependencies</Name>
     </ProjectReference>
     <ProjectReference Include="..\NewsHole.Email\NewsHole.Email.csproj">
       <Project>{99c5ea1d-2df0-4f0b-9267-d4eed9e7d9f3}</Project>
