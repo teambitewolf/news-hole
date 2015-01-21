@@ -1,0 +1,50 @@
+﻿@model NewsHole.Web.Models.Account.LoginModel
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+@Html.ValidationSummary()
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    <div class="form-group">
+        <div class="col-md-2 col-sm-3 col-xs-12">
+            @Html.Label("Email")
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            @Html.ValidationMessageFor(x => x.Email)
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-2 col-sm-3 col-xs-12">
+            @Html.Label("Password")
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            @Html.TextBoxFor(x => x.Password, new { @class = "form-control", type = "password" })
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            @Html.ValidationMessageFor(x => x.Password)
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-2 col-sm-3 col-xs-12">
+            @Html.Label("Remember User?")
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            @Html.CheckBoxFor(x => x.RememberUser)
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-xs-11">
+            <button class="btn btn-primary" type="submit">Login</button>
+            <a href="@Url.Action("Create")" class="btn btn-default">Create New Account</a>
+            <a href="@Url.Action("ResetPassword")" class="btn btn-default">Forgot Password?</a>
+        </div>
+    </div>
+}
+

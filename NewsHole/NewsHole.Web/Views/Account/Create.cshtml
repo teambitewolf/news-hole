@@ -1,0 +1,67 @@
+﻿@model NewsHole.Web.Models.Account.CreateUserModel
+
+@{
+    ViewBag.Title = "Create Account";
+}
+
+<h2>Create Account</h2>
+
+@using (Html.BeginForm("Create", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    <div class="form-group">
+        <div class="col-md-2 col-sm-3 col-xs-12">
+            @Html.Label("First Name")
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            @Html.TextBoxFor(x => x.FirstName, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            @Html.ValidationMessageFor(x => x.FirstName)
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-2 col-sm-3 col-xs-12">
+            @Html.Label("Last Name")
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            @Html.TextBoxFor(x => x.LastName, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            @Html.ValidationMessageFor(x => x.LastName)
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-2 col-sm-3 col-xs-12">
+            @Html.Label("Email")
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            @Html.ValidationMessageFor(x => x.Email)
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-2 col-sm-3 col-xs-12">
+            @Html.Label("Password")
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            @Html.TextBoxFor(x => x.Password, new { @class = "form-control", type = "password" })
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            @Html.ValidationMessageFor(x => x.Password)
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-2 col-sm-3 col-xs-12">
+            @Html.Label("Confirm Password")
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            @Html.TextBoxFor(x => x.ConfirmPassword, new { @class = "form-control", type = "password" })
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            @Html.ValidationMessageFor(x => x.ConfirmPassword)
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Create Account</button>
+}
