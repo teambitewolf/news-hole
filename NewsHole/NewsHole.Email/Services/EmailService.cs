@@ -1,7 +1,6 @@
-﻿using System;
-
-using NewsHole.Email.Infrastructure;
+﻿using NewsHole.Email.Infrastructure;
 using NewsHole.Email.Messages;
+using System;
 
 namespace NewsHole.Email.Services
 {

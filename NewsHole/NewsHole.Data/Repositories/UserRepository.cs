@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using NewsHole.Data.Entities;
+﻿using NewsHole.Data.Entities;
 using NHibernate;
 
 namespace NewsHole.Data.Repositories

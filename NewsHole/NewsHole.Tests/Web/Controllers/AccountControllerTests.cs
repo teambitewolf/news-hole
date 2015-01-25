@@ -1,6 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MvcContrib.TestHelper;
 using MvcContrib.TestHelper.Fakes;
 using NewsHole.Account.Messages;
@@ -10,6 +9,7 @@ using NewsHole.Email.Services;
 using NewsHole.Web.Controllers;
 using NewsHole.Web.Infrastructure;
 using NewsHole.Web.Models.Account;
+using System;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;

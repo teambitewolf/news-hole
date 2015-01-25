@@ -1,9 +1,8 @@
-﻿using System;
-
-using NewsHole.Account.Infrastructure;
+﻿using NewsHole.Account.Infrastructure;
 using NewsHole.Account.Messages;
 using NewsHole.Data.Entities;
 using NewsHole.Data.Repositories;
+using System;
 
 namespace NewsHole.Account.Services
 {

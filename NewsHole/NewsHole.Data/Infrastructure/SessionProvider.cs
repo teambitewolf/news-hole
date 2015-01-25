@@ -1,8 +1,8 @@
-﻿using System.Configuration;
-using System.Reflection;
-using FluentNHibernate.Cfg;
+﻿using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
+using System.Configuration;
+using System.Reflection;
 
 namespace NewsHole.Data.Infrastructure
 {

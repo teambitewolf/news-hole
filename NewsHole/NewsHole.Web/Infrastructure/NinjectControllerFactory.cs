@@ -1,9 +1,8 @@
-﻿using System;
+﻿using NewsHole.Dependencies;
+using Ninject;
+using System;
 using System.Web.Mvc;
 using System.Web.Routing;
-
-using Ninject;
-using NewsHole.Dependencies;
 
 namespace NewsHole.Web.Infrastructure
 {
