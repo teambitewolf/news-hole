@@ -1,1 +1,7 @@
-﻿
+﻿.left-menu {
+    float: left;
+}
+
+.field-validation-error {
+    color: red;
+}

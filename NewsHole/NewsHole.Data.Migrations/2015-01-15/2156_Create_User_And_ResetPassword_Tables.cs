@@ -13,7 +13,7 @@ namespace NewsHole.Data.Migrations
         public override void Up()
         {
             Create.Table("User")
-                .WithColumn("UserId").AsInt32().PrimaryKey().Identity()
+                .WithColumn("Id").AsInt32().PrimaryKey().Identity()
                 .WithColumn("Email").AsString()
                 .WithColumn("FirstName").AsString()
                 .WithColumn("LastName").AsString()

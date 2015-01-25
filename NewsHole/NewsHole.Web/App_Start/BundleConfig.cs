@@ -1,6 +1,6 @@
 ﻿using System.Web.Optimization;
 
-namespace NewsHole.Web.App_Start
+namespace NewsHole.Web
 {
     public class BundleConfig
     {
@@ -10,8 +10,8 @@ namespace NewsHole.Web.App_Start
                 .Include("~/Scripts/jquery-2.1.3.js"));
 
             bundles.Add(new ScriptBundle("~/Scripts/validation")
-                .Include("~/Scripts/jquery-validate.js")
-                .Include("~/Scripts/jquery-validate.unobtrusive.js"));
+                .Include("~/Scripts/jquery.validate.js")
+                .Include("~/Scripts/jquery.validate.unobtrusive.js"));
 
             bundles.Add(new ScriptBundle("~/Scripts/bootstrap")
                 .Include("~/Scripts/bootstrap.js"));
@@ -19,6 +19,9 @@ namespace NewsHole.Web.App_Start
             bundles.Add(new StyleBundle("~/Content/bootstrap")
                 .Include("~/Content/bootstrap.css")
                 .Include("~/Content/bootstrap-theme.css"));
+
+            bundles.Add(new StyleBundle("~/Content/site")
+                .Include("~/Content/Site.css"));
         }
     }
 }
